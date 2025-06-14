@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <div id="container">
+        <h1 id="title">Jaesuru's Forgettable Password Generator</h1>
+        <h2 id="subtitle">Unnecessarily Long, Complicated and Dumb.</h2>
+        <h3 id="subtitle">(Depending on your options)</h3>
+
+        <hr class="line">
+
+        <div id="checkboxes">
+            <label for="minLabel">Number of characters: </label>
+            <input id="minLabel" type="number" min="4" placeholder="..."><br>
+
+            <input id="incLow" type="checkbox">
+            <label for="incLow" class="chkbox-style">Include Lowercases</label><br>
+
+            <input id="incUp" type="checkbox">
+            <label for="incUp" class="chkbox-style">Include Uppercases</label><br>
+
+            <input id="incNum" type="checkbox">
+            <label for="incNum" class="chkbox-style">Include Numbers</label><br>
+
+            <input id="incSym" type="checkbox">
+            <label for="incSym" class="chkbox-style">Include Symbols</label><br>
+        </div>
+
+        <hr class="line"> 
+
+        <button id="passwordBtn" onclick="generatePassword()">Generate Your Password!</button>
+
+        <h2 id="generatedTitle">Generated Password:</h2>
+        <h2 id="result"></h2>
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

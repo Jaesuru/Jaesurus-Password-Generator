@@ -1,0 +1,86 @@
+@font-face {
+    src: url(/fonts/Tiny5-Regular.ttf);
+    font-family: tiny5;
+}
+
+* {
+    font-family: tiny5;
+}
+
+body {
+    background-color: black;
+    color: white;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    border: 4px solid white;
+    padding: 20px;
+}
+
+#title {
+    text-align: center;
+}
+
+#subtitle {
+    text-align: center;
+}
+
+.line {
+    text-align: center;
+    height: 5px;
+    background-color: white;
+    border-radius: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#container {
+    margin: 5px;
+}
+
+#checkboxes {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+#minLabel {
+    width: 50px;
+}
+
+#passwordBtn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.05s ease-out;
+    padding: 20px;
+}
+
+#passwordBtn:hover {
+    background-color: hsl(0, 0%, 65%);
+}
+
+#passwordBtn:active {
+    transform: scale(1.5);
+}
+
+#generatedTitle {
+    margin-left: 20px;
+}
+
+#result {
+    border-radius: 2px;
+    border: 2px solid white;
+    min-height: 100px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow:auto; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
